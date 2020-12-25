@@ -1,0 +1,96 @@
+/* navbar section */
+.navbar {
+    background: var(--secondary-color);
+    height: 60px;
+    padding: 8px calc((100vw - 1200px) / 2); /* gives it better spanning regardless of screen size */
+    display: flex;
+    justify-content: space-between; /* push to the ends to give better spacing */
+    align-items: center;
+    position: relative;
+}
+
+.navbar__logo {
+    color: var(--third-color);
+    text-decoration: none; /* removes the underline on anchor tags */
+    padding-left: 16px; /* since it's already pushed to the left side */
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.navbar__link {
+    color: var(--third-color);
+    text-decoration: none; /* removes the underline on anchor tags */
+    padding: 0px 16px;
+}
+
+.navbar__link:hover {
+    color: var(--primary-color);
+}
+
+@media screen and (max-width: 768px) {
+    body.active {
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    /* hides the bigger screen menu to allow space for the mobile-menu */
+    .navbar__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* creating the menu navbar for mobile */
+    .navbar__menu {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 100px);
+        position: absolute;
+        width: 100%;
+        top: -1000px; /* helps hides the old navbar menu items because there wasn't a display: none for the navbar__links */
+    }
+
+    .navbar__menu.active {
+        top: 100%;
+        opacity: 1;
+        z-index: 9;
+        height: 100vh;
+        font-size: 24px;
+        background-color: var(--secondary-color);
+        transition: all 0.75s ease-in-out; /* adding the pop-in effect */
+    }
+
+    .navbar__toggle .bar {
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background-color: var(--third-color);
+        display: block;
+        cursor: pointer;
+    }
+
+    /* position the hamburger menu */
+    #mobile-menu {
+        position: absolute;
+        top: 15%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    /* changing of the hamburger menu icon to the X icon */
+    #mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+
+    }
+
+    #mobile-menu.is-active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+
+    }
+}
