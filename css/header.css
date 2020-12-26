@@ -27,6 +27,18 @@
     color: var(--primary-color);
 }
 
+.navbar__link.navbar__btn { /*targets the button specifically */
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    padding: 10px;
+    margin: 0 16px;
+    border-radius: 4px;
+}
+
+.navbar__link.navbar__btn:hover {
+    background-color: var(--third-color);
+}
+
 @media screen and (max-width: 768px) {
     body.active {
         overflow-y: hidden;
