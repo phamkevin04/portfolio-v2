@@ -1,0 +1,23 @@
+footer {
+    justify-content: center;
+    text-align: center;
+    padding-top: 10vh;
+}
+
+footer h3 {
+    text-transform: uppercase;
+    padding-bottom: 16px;
+}
+
+.footer__btn {
+    text-decoration: none;
+    color: var(--primary-color);
+    /* background-color: var(--primary-color); */
+    margin-right: 5px;
+    padding: 5px 5px;
+    border-radius: 4px;
+}
+
+.footer__btn:hover {
+    color: var(--third-color);
+}

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/footer.css" />
 </head>
 <body>
     <!-- Navbar Section -->
@@ -26,9 +27,9 @@
 
         <div class="navbar__menu">
             <a href="/" class="navbar__link">Home</a>
+            <a href="/" class="navbar__link">About</a>
             <a href="/" class="navbar__link">Experiences</a>
             <a href="/" class="navbar__link">Projects</a>
-            <a href="/" class="navbar__link">About</a>
             <a href="https://forms.gle/MdHt4XWveDQzRnbE7" target="_blank" class="navbar__link">Feedback</a>
             <a href="/" class="navbar__link navbar__btn">Contact</a> 
             <!-- need to do more implementation later -->
@@ -49,6 +50,39 @@
         </div>
     </div>
 
+    <!-- About Section -->
+    <div class="about" id="about-section">
+        <div class="about__container">
+            <div class="about__text">
+                <h1 class="about__headline animate-about">About Me</h1>
+                <p class="about__summary about__header animate-about">
+                    Graduated from Oregon State University <br>
+                    Degree in Computer Science
+                </p>
+                <p class="about__summary animate-about">
+                    Our future revolves around technology and we need to make sure that it is usable by our users.
+                    Making our technology as simple as possible, but still holding creative and modern solutions are important.
+                </p>
+                <a href="/pdf/KevinPham_Resume.pdf" target="_blank" class="resume__btn">Resume</a>
+            </div>
+            <div class="about__image">
+                <img src="/images/kevin-headshot.jpg" alt="Kevin Pham Headshot" class="about__img animate-img">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h3> Developed by Kevin Pham </h3>
+        <a href="https://www.linkedin.com/in/kevinpham9/" target="_blank" class="footer__btn">
+            <i class="fab fa-linkedin-in fa-2x"> </i>
+        </a>
+        <a href="https://github.com/phamkevin04" target="_blank" class="footer__btn">
+            <i class="fab fa-github fa-2x"> </i>
+        </a>
+        <a href="mailto:phamkevin04@gmail.com" target="_blank" class="footer__btn">
+            <i class="fas fa-envelope fa-2x"> </i>
+        </a>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
 

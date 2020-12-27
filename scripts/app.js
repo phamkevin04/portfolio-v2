@@ -24,3 +24,19 @@ gsap.from('.animate-hero', { // animate to flow into the page hero section
     y: -200,
     stagger: 0.5
 });
+
+gsap.from('.animate-about', { /* text on the left */
+    scrollTrigger: '.animate-about',
+    duration: 1.5,
+    opacity: 1,
+    x: -200,
+    stagger: 0.5
+});
+
+gsap.from('.animate-img', { /* image on the right */
+    scrollTrigger: '.animate-about',
+    duration: 1.5,
+    opacity: 0,
+    x: 200,
+    
+});
