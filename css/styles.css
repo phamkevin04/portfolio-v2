@@ -141,27 +141,37 @@
     padding: 16px;
 }
 
-.experience__information {
-    display: flex;
-    justify-content: left;
+
+.experience__information-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 20px;
 }
 
-.experience__information h3 {
-    font-size: clamp(20px, 8vw, 22px);
-    padding-bottom: 16px;
-    text-transform: uppercase;
+.experience__information-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-size: 20px;
 }
 
 .experience__title {
-    padding-right: 25px;
+    text-transform: uppercase;
+    text-align: left;
+    
 }
 
 .experience__company {
-    padding-right: 25px;
+    
+    text-align: center;
 }
 
 .experience__duration {
-    padding-right: 25px;
+    
+    text-align: right;
+}
+
+.experience__project-link {
+    text-align: right;
 }
 
 .experience__project-link a {
@@ -178,8 +188,10 @@
 
 .experience__text {
     font-size: clamp(12px, 8vw, 18px);
+    padding-top: 16px;
 }
 
+/* Skills section */
 .skills__container {
     padding-top: 16px;
     display: flex;
@@ -187,7 +199,7 @@
 }
 
 .experience__skill {
-    padding: 16px 32px; /* originally was 16px 48px */
+    padding: 16px 20px; /* originally was 16px 48px */
     background-color: var(--third-color);
     color: var(--secondary-color);
     margin-right: 10px;
@@ -196,15 +208,30 @@
 
 /* Responsive Mobile Styles */
 @media screen and (max-width: 768px) {
-    .experience__information {
+    .experience__information-3 {
         display: block;
-        text-align: left;
-        justify-content: left;
     }
 
-    .experience__information h3 {
-        margin: 0px;
-        padding: 10px 0;
+    .experience__information-4 {
+        display: block;
+    }
+
+    .experience__title {
+        text-align: left;
+        font-size: 22px;
+    }
+
+    .experience__company {
+        text-align: left;
+    }
+
+    .experience__duration {
+        text-align: left;
+    }
+
+    .experience__project-link {
+        padding-top: 16px;
+        text-align: left;
     }
 
     .experience__text {
