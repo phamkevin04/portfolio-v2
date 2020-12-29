@@ -143,9 +143,17 @@
 }
 
 .experience__information h3 {
-    padding-right: 48px;
+    font-size: clamp(20px, 8vw, 22px);
     padding-bottom: 16px;
-    font-size: clamp(20px, 8vw, 24px);
+    text-transform: uppercase;
+}
+
+.experience__title {
+    padding-right: 100px;
+}
+
+.experience__company {
+    padding-right: 100px;
 }
 
 .experience__text {
@@ -159,7 +167,7 @@
 }
 
 .experience__skill {
-    padding: 16px 48px;
+    padding: 16px 32px; /* originally was 16px 48px */
     background-color: var(--third-color);
     color: var(--secondary-color);
     margin-right: 10px;
@@ -185,11 +193,13 @@
     }
 
     .skills__container {
-        display: block;
+        /* display: block; */
+        flex-wrap: wrap;
         text-align: center;
     }
 
     .experience__skill {
         margin-bottom: 10px;
+        flex: 1 0 21%;
     }
 }
