@@ -31,12 +31,6 @@ function scrollFunction() {
   }
 }
 
-// // When the user clicks on the button, scroll to the top of the document
-// function topFunction() {
-//   document.body.scrollTop = 0;
-//   document.documentElement.scrollTop = 0;
-// }
-
 function scrollToTop() {
     var position =
         document.body.scrollTop || document.documentElement.scrollTop;
@@ -45,12 +39,6 @@ function scrollToTop() {
         scrollAnimation = setTimeout("scrollToTop()", 30);
     } else clearTimeout(scrollAnimation);
 }
-
-
-
-
-
-
 
 
 // Green Sock Animations
@@ -77,4 +65,12 @@ gsap.from('.animate-img', { /* image on the right */
     opacity: 0,
     x: 200,
     
+});
+
+gsap.from('.animate-experience', { /* text on the left */
+    scrollTrigger: '.animate-experience',
+    duration: 1.5,
+    opacity: 1,
+    x: -200,
+    stagger: 0.5
 });
