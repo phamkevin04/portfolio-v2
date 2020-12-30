@@ -263,7 +263,33 @@
     }
 }
 
+/* Project Section */
+.project:first-child { /* append to the first one, after the about section */
+    padding-top: 10vh !important;
+}
 
+.project {
+    /* padding-top: 10vh !important; */
+    /* padding-bottom: 10vh !important; */
+    padding: 8px calc((100vw - 1200px) / 2);
+}
+
+.project__headline {
+    text-transform: uppercase;
+    font-size: clamp(24px, 8vw, 52px);
+    padding-bottom: 16px;
+}
+
+.project__container {
+    padding: 16px; /* refactor later */
+}
+
+
+
+
+
+
+/* back to top button */
 #top__btn {
     display: none;
     position: fixed;
