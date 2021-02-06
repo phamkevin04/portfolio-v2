@@ -74,3 +74,21 @@ gsap.from('.animate-experience', { /* text on the left */
     x: -200,
     stagger: 0.5
 });
+
+gsap.from('.animate-project', {
+    scrollTrigger: '.animate-project',
+    duration: 1.5,
+    opacity: 0,
+    y: -200,
+    stagger: 0.5,
+    delay: 0.5
+});
+
+gsap.from('.animate-card', {
+    scrollTrigger: '.animate-card',
+    duration: 1,
+    opacity: 0,
+    y: -200, 
+    stagger: 0.5,
+    delay: 0.5
+});
